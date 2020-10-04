@@ -12080,9 +12080,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pmton\\versionsearchapp\\versionsearchapp.csproj",
-      "projectName": "versionsearchapp",
-      "projectPath": "C:\\Users\\pmton\\versionsearchapp\\versionsearchapp.csproj",
+      "projectUniqueName": "C:\\Users\\pmton\\versionsearchapp\\VerisonSearchApp.csproj",
+      "projectName": "VerisonSearchApp",
+      "projectPath": "C:\\Users\\pmton\\versionsearchapp\\VerisonSearchApp.csproj",
       "packagesPath": "C:\\Users\\pmton\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pmton\\versionsearchapp\\obj\\",
       "projectStyle": "PackageReference",
