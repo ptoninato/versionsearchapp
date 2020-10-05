@@ -1,0 +1,12 @@
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.Services.deps.json
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.Services.dll
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.Services.pdb
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.Data.dll
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.Data.pdb
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.csprojAssemblyReference.cache
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.AssemblyInfoInputs.cache
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.AssemblyInfo.cs
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.csproj.CoreCompileInputs.cache
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.csproj.CopyComplete
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.dll
+C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.pdb

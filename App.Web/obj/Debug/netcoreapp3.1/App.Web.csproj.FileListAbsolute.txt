@@ -76,3 +76,5 @@ C:\Users\pmton\versionsearchapp\App.Web\obj\Debug\netcoreapp3.1\staticwebassets\
 C:\Users\pmton\versionsearchapp\App.Web\obj\Debug\netcoreapp3.1\App.Web.dll
 C:\Users\pmton\versionsearchapp\App.Web\obj\Debug\netcoreapp3.1\App.Web.pdb
 C:\Users\pmton\versionsearchapp\App.Web\obj\Debug\netcoreapp3.1\App.Web.genruntimeconfig.cache
+C:\Users\pmton\versionsearchapp\App.Web\bin\Debug\netcoreapp3.1\App.Services.dll
+C:\Users\pmton\versionsearchapp\App.Web\bin\Debug\netcoreapp3.1\App.Services.pdb

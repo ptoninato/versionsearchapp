@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using App.Web.Models;
+using App.Services;
 
 namespace App.Web.Controllers
 {
@@ -20,6 +21,10 @@ namespace App.Web.Controllers
 
         public IActionResult Index()            
         {
+            var versionService = new VersionService();
+
+            var results = versionService.GetSoftwareGreaterThanInput("1.0.0");
+
             return View();
         }
 
