@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pmton\\App.Data\\App.Data.csproj",
+      "projectUniqueName": "C:\\Users\\pmton\\versionsearchapp\\App.Data\\App.Data.csproj",
       "projectName": "App.Data",
-      "projectPath": "C:\\Users\\pmton\\App.Data\\App.Data.csproj",
+      "projectPath": "C:\\Users\\pmton\\versionsearchapp\\App.Data\\App.Data.csproj",
       "packagesPath": "C:\\Users\\pmton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pmton\\App.Data\\obj\\",
+      "outputPath": "C:\\Users\\pmton\\versionsearchapp\\App.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
