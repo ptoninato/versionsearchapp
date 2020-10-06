@@ -4,7 +4,12 @@ using System.Text;
 
 namespace App.Services
 {
-    public class VersionService
+    public interface IVersionSoftware
+    {
+        List<Software> GetSoftwareGreaterThanInput(string input);
+    }
+
+    public class VersionService : IVersionSoftware
     {
         public List<Software> GetSoftwareGreaterThanInput(string input)
         {
