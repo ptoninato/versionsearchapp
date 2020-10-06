@@ -19,13 +19,20 @@ namespace App.Web.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()            
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(VersionSearchViewModel viewModel)
         {
             var versionService = new VersionService();
 
-            var results = versionService.GetSoftwareGreaterThanInput("1.0.0");
+            viewModel.SearchResults = versionService.GetSoftwareGreaterThanInput(viewModel.SearchTerm);
 
-            return View();
+            return View(viewModel);
         }
 
         public IActionResult Privacy()

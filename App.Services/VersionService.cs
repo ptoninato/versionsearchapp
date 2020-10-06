@@ -21,7 +21,7 @@ namespace App.Services
             {
                 if (Version.TryParse(software.Version, out Version ver))
                 {
-                    if (inputVersion.CompareTo(ver) < 0)
+                    if (ver > inputVersion)
                     {
                         results.Add(software);
                     }
