@@ -10,7 +10,6 @@ namespace App.Services
         {
             var results = new List<Software>();
             Version.TryParse(input, out Version inputVersion);
-            var TEST = new Version(input);
             var existingSoftware = SoftwareService.GetAllSoftware();
 
             foreach(var software in existingSoftware)
@@ -21,7 +20,8 @@ namespace App.Services
                     {
                         results.Add(software);
                     }
-                }               
+                }
+                //TODO: handle bad versions in existingSoftware
             }
 
             return results;
