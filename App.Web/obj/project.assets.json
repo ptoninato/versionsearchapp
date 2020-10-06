@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/App.Data.dll": {}
         }
+      },
+      "App.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "App.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/App.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.Services.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../App.Data/App.Data.csproj",
       "msbuildProject": "../App.Data/App.Data.csproj"
+    },
+    "App.Services/1.0.0": {
+      "type": "project",
+      "path": "../App.Services/App.Services.csproj",
+      "msbuildProject": "../App.Services/App.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "App.Data >= 1.0.0"
+      "App.Data >= 1.0.0",
+      "App.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,6 +77,9 @@
           "projectReferences": {
             "C:\\Users\\pmton\\versionsearchapp\\App.Data\\App.Data.csproj": {
               "projectPath": "C:\\Users\\pmton\\versionsearchapp\\App.Data\\App.Data.csproj"
+            },
+            "C:\\Users\\pmton\\versionsearchapp\\App.Services\\App.Services.csproj": {
+              "projectPath": "C:\\Users\\pmton\\versionsearchapp\\App.Services\\App.Services.csproj"
             }
           }
         }
