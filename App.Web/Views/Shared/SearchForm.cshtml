@@ -4,10 +4,9 @@
 @using (Html.BeginForm("SearchResults", "Home", FormMethod.Get))
 {
     <div>Enter Version Number:</div>
-    <div>
+    <div style="padding-bottom: 10px;">
         @Html.TextBoxFor(m => m.SearchTerm, new { placeholder = "0.0.0.0" })
         @Html.ValidationMessageFor(m => m.SearchTerm, "")
-    </div>
-    <br />
-    <input type="submit" class="btn btn-primary" value="Search" />
+    </div>  
+    <input type="submit" class="btn btn-secondary" value="Search" />
 }

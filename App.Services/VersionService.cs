@@ -14,6 +14,10 @@ namespace App.Services
         public List<Software> GetSoftwareGreaterThanInput(string input)
         {
             var results = new List<Software>();
+
+            //TODO: Add front-end validation and error handling for invalid inputs
+            input = ValidateInput(input);   
+
             Version.TryParse(input, out Version inputVersion);
 
             if (inputVersion != null)
@@ -41,6 +45,21 @@ namespace App.Services
 
             return results;
             //TODO: Handle bad version input
+        }
+
+        private static string ValidateInput(string input)
+        {
+            if (input == null)
+            {
+                input = "0.0";
+            }
+
+            if (!input.Contains('.'))
+            {
+                input += ".0";
+            }
+
+            return input;
         }
     }
 }
