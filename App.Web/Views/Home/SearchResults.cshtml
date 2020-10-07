@@ -1,0 +1,34 @@
+﻿@model VersionSearchViewModel
+
+<div class="text-left">
+    @await Html.PartialAsync("SearchForm")
+
+    @if (Model != null)
+    {
+        <br />
+        <h3>Results for @Model.SearchTerm: @Model.SearchResults.Count()</h3>
+        <br />
+        if (Model.SearchResults.Count() > 0)
+        {
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th scope="col">Software Name</th>
+                        <th scope="col">Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in Model.SearchResults)
+                    {
+                        <tr>
+                            <td>@row.Name</td>
+                            <td>@row.Version</td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        }
+    }
+
+</div>

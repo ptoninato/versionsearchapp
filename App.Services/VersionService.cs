@@ -14,22 +14,52 @@ namespace App.Services
         public List<Software> GetSoftwareGreaterThanInput(string input)
         {
             var results = new List<Software>();
-            Version.TryParse(input, out Version inputVersion);
-            var existingSoftware = SoftwareService.GetAllSoftware();
 
-            foreach(var software in existingSoftware)
+            //TODO: Add front-end validation and error handling for invalid inputs
+            input = ValidateInput(input);   
+
+            Version.TryParse(input, out Version inputVersion);
+
+            if (inputVersion != null)
             {
-                if (Version.TryParse(software.Version, out Version ver))
+                var existingSoftware = SoftwareService.GetAllSoftware();
+
+                foreach (var software in existingSoftware)
                 {
-                    if (inputVersion.CompareTo(ver) < 0)
+                    if (Version.TryParse(software.Version, out Version ver))
                     {
-                        results.Add(software);
+                        if (ver > inputVersion)
+                        {
+                            results.Add(software);
+                        }
+                    }
+                    else
+                    {
+                        //TODO: handle bad versions in existingSoftware
                     }
                 }
-                //TODO: handle bad versions in existingSoftware
+
+                return results;
+
             }
 
             return results;
+            //TODO: Handle bad version input
+        }
+
+        private static string ValidateInput(string input)
+        {
+            if (input == null)
+            {
+                input = "0.0";
+            }
+
+            if (!input.Contains('.'))
+            {
+                input += ".0";
+            }
+
+            return input;
         }
     }
 }
