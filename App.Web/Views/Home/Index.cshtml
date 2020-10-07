@@ -1,36 +1,5 @@
 ﻿@model VersionSearchViewModel
  
-<div class="text-center">
-    <p>Version Search</p>
-
-    <form method="post">
-        <input asp-for="SearchTerm" />
-        <input type="submit" name="Search" placeholder="Search" aria-label="Search"/>
-    </form>
-
-    @if (Model != null)
-    {
-        <h3>Results for @Model.SearchTerm: @Model.SearchResults.Count()</h3>
-        if (Model.SearchResults.Count() > 0)
-        {
-        <table class="table table-striped ">
-            <thead>
-                <tr>
-                    <th scope="col">Software Name</th>
-                    <th scope="col">Version</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var row in Model.SearchResults)
-                {
-                    <tr>
-                        <td>@row.Name</td>
-                        <td>@row.Version</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-        }
-    }
-
+<div class="text-left">
+    @await Html.PartialAsync("SearchForm")
 </div>

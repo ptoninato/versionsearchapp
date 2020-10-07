@@ -15,21 +15,32 @@ namespace App.Services
         {
             var results = new List<Software>();
             Version.TryParse(input, out Version inputVersion);
-            var existingSoftware = SoftwareService.GetAllSoftware();
 
-            foreach(var software in existingSoftware)
+            if (inputVersion != null)
             {
-                if (Version.TryParse(software.Version, out Version ver))
+                var existingSoftware = SoftwareService.GetAllSoftware();
+
+                foreach (var software in existingSoftware)
                 {
-                    if (ver > inputVersion)
+                    if (Version.TryParse(software.Version, out Version ver))
                     {
-                        results.Add(software);
+                        if (ver > inputVersion)
+                        {
+                            results.Add(software);
+                        }
+                    }
+                    else
+                    {
+                        //TODO: handle bad versions in existingSoftware
                     }
                 }
-                //TODO: handle bad versions in existingSoftware
+
+                return results;
+
             }
 
             return results;
+            //TODO: Handle bad version input
         }
     }
 }
