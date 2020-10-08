@@ -1,5 +1,4 @@
 
-.vs/VerisonSearchApp/config/applicationhost.config
-.vs/VerisonSearchApp/v16/.suo
-.vs/VerisonSearchApp/v16/.suo
-.vs/VerisonSearchApp/v16/.suo
+.vs/**
+**/bin/**
+**/obj/**
