@@ -31,7 +31,7 @@ namespace App.Web.Controllers
 
             viewModel.SearchResults = versionService.GetSoftwareGreaterThanInput(viewModel.SearchTerm);
 
-            return View(viewModel);
+            return View("Index", viewModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
