@@ -11,7 +11,7 @@ namespace App.DataManager
                 new Software
                 {
                     Name = "MS Word",
-                    Version = "13.2.1."
+                    Version = "13.2.1"
                 },
                 new Software
                 {
