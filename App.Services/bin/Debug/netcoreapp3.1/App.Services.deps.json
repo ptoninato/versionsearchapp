@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "App.Services/1.0.0": {
         "dependencies": {
-          "App.Data": "1.0.0"
+          "App.Data": "1.0.0",
+          "App.DataManager": "1.0.0"
         },
         "runtime": {
           "App.Services.dll": {}
@@ -17,6 +18,14 @@
       "App.Data/1.0.0": {
         "runtime": {
           "App.Data.dll": {}
+        }
+      },
+      "App.DataManager/1.0.0": {
+        "dependencies": {
+          "App.Data": "1.0.0"
+        },
+        "runtime": {
+          "App.DataManager.dll": {}
         }
       }
     }
@@ -28,6 +37,11 @@
       "sha512": ""
     },
     "App.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.DataManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

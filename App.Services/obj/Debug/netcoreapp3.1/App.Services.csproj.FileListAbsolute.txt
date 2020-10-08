@@ -10,3 +10,5 @@ C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Service
 C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.csproj.CopyComplete
 C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.dll
 C:\Users\pmton\versionsearchapp\App.Services\obj\Debug\netcoreapp3.1\App.Services.pdb
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.DataManager.dll
+C:\Users\pmton\versionsearchapp\App.Services\bin\Debug\netcoreapp3.1\App.DataManager.pdb

@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/App.Data.dll": {}
         }
+      },
+      "App.DataManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "App.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/App.DataManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.DataManager.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../App.Data/App.Data.csproj",
       "msbuildProject": "../App.Data/App.Data.csproj"
+    },
+    "App.DataManager/1.0.0": {
+      "type": "project",
+      "path": "../App.DataManager/App.DataManager.csproj",
+      "msbuildProject": "../App.DataManager/App.DataManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "App.Data >= 1.0.0"
+      "App.Data >= 1.0.0",
+      "App.DataManager >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -56,6 +75,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\pmton\\versionsearchapp\\App.DataManager\\App.DataManager.csproj": {
+              "projectPath": "C:\\Users\\pmton\\versionsearchapp\\App.DataManager\\App.DataManager.csproj"
+            },
             "C:\\Users\\pmton\\versionsearchapp\\App.Data\\App.Data.csproj": {
               "projectPath": "C:\\Users\\pmton\\versionsearchapp\\App.Data\\App.Data.csproj"
             }

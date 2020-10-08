@@ -12,11 +12,25 @@
           "bin/placeholder/App.Data.dll": {}
         }
       },
-      "App.Services/1.0.0": {
+      "App.DataManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "App.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/App.DataManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.DataManager.dll": {}
+        }
+      },
+      "App.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "App.Data": "1.0.0",
+          "App.DataManager": "1.0.0"
         },
         "compile": {
           "bin/placeholder/App.Services.dll": {}
@@ -32,6 +46,11 @@
       "type": "project",
       "path": "../App.Data/App.Data.csproj",
       "msbuildProject": "../App.Data/App.Data.csproj"
+    },
+    "App.DataManager/1.0.0": {
+      "type": "project",
+      "path": "../App.DataManager/App.DataManager.csproj",
+      "msbuildProject": "../App.DataManager/App.DataManager.csproj"
     },
     "App.Services/1.0.0": {
       "type": "project",
