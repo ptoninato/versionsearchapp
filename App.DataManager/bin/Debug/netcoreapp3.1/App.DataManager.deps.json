@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "App.DataManager/1.0.0": {
+        "dependencies": {
+          "App.Data": "1.0.0"
+        },
+        "runtime": {
+          "App.DataManager.dll": {}
+        }
+      },
+      "App.Data/1.0.0": {
+        "runtime": {
+          "App.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "App.DataManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

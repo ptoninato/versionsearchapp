@@ -1,6 +1,6 @@
-﻿using System;
+﻿using App.DataManager;
+using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace App.Services
 {
@@ -22,7 +22,7 @@ namespace App.Services
 
             if (inputVersion != null)
             {
-                var existingSoftware = SoftwareService.GetAllSoftware();
+                var existingSoftware = SoftwareManager.GetAllSoftware();
 
                 foreach (var software in existingSoftware)
                 {

@@ -1,6 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-public static class SoftwareService
+namespace App.DataManager
+{
+    public static class SoftwareManager
     {
         public static IEnumerable<Software> GetAllSoftware()
         {
@@ -54,3 +56,4 @@ public static class SoftwareService
             };
         }
     }
+}

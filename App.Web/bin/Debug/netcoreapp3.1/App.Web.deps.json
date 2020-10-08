@@ -324,9 +324,21 @@
           "App.Data.dll": {}
         }
       },
-      "App.Services/1.0.0": {
+      "App.DataManager/1.0.0": {
         "dependencies": {
           "App.Data": "1.0.0"
+        },
+        "runtime": {
+          "App.DataManager.dll": {}
+        },
+        "compile": {
+          "App.DataManager.dll": {}
+        }
+      },
+      "App.Services/1.0.0": {
+        "dependencies": {
+          "App.Data": "1.0.0",
+          "App.DataManager": "1.0.0"
         },
         "runtime": {
           "App.Services.dll": {}
@@ -2036,6 +2048,11 @@
       "sha512": ""
     },
     "App.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.DataManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

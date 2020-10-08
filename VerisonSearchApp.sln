@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Services", "App.Service
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Web", "App.Web\App.Web.csproj", "{8597DB2F-578A-44D1-AB54-137CA5F316EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.DataManager", "App.DataManager\App.DataManager.csproj", "{4CE7232B-2BE3-4D10-A6FE-9BFEE19C9FD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8597DB2F-578A-44D1-AB54-137CA5F316EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8597DB2F-578A-44D1-AB54-137CA5F316EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8597DB2F-578A-44D1-AB54-137CA5F316EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE7232B-2BE3-4D10-A6FE-9BFEE19C9FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE7232B-2BE3-4D10-A6FE-9BFEE19C9FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE7232B-2BE3-4D10-A6FE-9BFEE19C9FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE7232B-2BE3-4D10-A6FE-9BFEE19C9FD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

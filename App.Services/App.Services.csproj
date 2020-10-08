@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\App.DataManager\App.DataManager.csproj" />
     <ProjectReference Include="..\App.Data\App.Data.csproj" />
   </ItemGroup>
 
