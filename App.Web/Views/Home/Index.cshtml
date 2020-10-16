@@ -4,15 +4,16 @@
     <form asp-controller="home" asp-action="SearchResults" method="get">
         <div>Enter Version Number:</div>
         <input asp-for="SearchTerm" placeholder="0.0.0.0"/>
+        <span asp-validation-for="SearchTerm" class="text-danger"></span>
         <br />
         <br />
         <input type="submit" class="btn btn-secondary" value="Search" />
     </form>
 
-    @if (Model != null)
+    @if (Model != null && ViewData.ModelState.IsValid)
     {
         <br />
-        <h3>Results for @Model.SearchTerm: @Model.SearchResults.Count()</h3>
+        <h3>@Model.SearchResults.Count() Results for @Model.SearchTerm</h3>
         <br />
         if (Model.SearchResults.Count() > 0)
         {
